@@ -1,0 +1,23 @@
+<section id="services" class="services bg-primary">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-10 col-lg-offset-1">
+        {{ title_prefix }}
+        {% if label %}
+          <h2{{ title_attributes }}>{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
+        <hr class="small">
+        <div class="row">
+          <div{{ attributes }}>
+
+            {% block content %}
+              {{ content }}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

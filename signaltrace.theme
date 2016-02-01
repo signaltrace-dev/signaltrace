@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ */
+
+function signaltrace_preprocess_page(&$variables){
+  $site_config = \Drupal::config('system.site');
+  $variables['site_name'] = $site_config->get('name');
+  if ($site_config->get('slogan')) {
+    $variables['site_slogan'] = strip_tags($site_config->get('slogan'));
+  }
+
+  $variables['theme_path'] = drupal_get_path('theme', 'signaltrace');
+
+  $block = \Drupal\block\Entity\Block::load('views_block__services_services_block');
+  $variables['services_block'] = \Drupal::entityManager()
+    ->getViewBuilder('block')
+    ->view($block);
+
+}

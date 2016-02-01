@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="79px" height="74px" viewBox="0 0 79 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Monitor-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Monitor-1" sketch:type="MSLayerGroup" transform="translate(-9.000000, -13.000000)">
+            <rect id="Container" sketch:type="MSShapeGroup" x="0" y="0.951038959" width="96" height="96"></rect>
+            <g id="Shape" transform="translate(11.000000, 15.000000)" stroke-width="4" stroke="#FFFFFF" stroke-linecap="round" sketch:type="MSShapeGroup" stroke-linejoin="round">
+                <path d="M2.0226,2.2634 C-0.9741,4.6786 -0.0166,49.1405 2.4031,52.1306 C4.8228,55.1208 67.3769,55.4241 70.7406,52.2262 C73.804,49.314 76.8188,6.4291 72.4991,3.0151 C68.1793,-0.3988 5.0193,-0.1519 2.0226,2.2634 L2.0226,2.2634 Z"></path>
+                <path d="M12.116,9.4561 C10.6552,10.6678 11.0058,44.1626 12.3879,45.0967 C13.7701,46.0309 59.95,46.3147 61.2295,45.1651 C62.5089,44.0153 64.1129,11.5178 62.4863,9.9933 C60.8597,8.469 13.5768,8.2445 12.116,9.4561 L12.116,9.4561 Z"></path>
+                <path d="M29.5276,55.3755 L27.6953,66.3691"></path>
+                <path d="M43.8195,54.6426 L45.2853,67.2853"></path>
+                <path d="M16.8849,68.7600964 C17.6178,68.5332976 58.2946,69.2138178 58.2946,69.2138178"></path>
+            </g>
+        </g>
+    </g>
+</svg>
