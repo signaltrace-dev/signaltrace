@@ -100,3 +100,15 @@ ul.skills li {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
+@media screen and (max-width: 639px) {
+  .header {
+    text-align: center;
+  }
+  .header .contact {
+    text-align: left;
+  }
+  .badge {
+    float: none;
+    margin: 0 auto;
+  }
+}
