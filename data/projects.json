@@ -1,0 +1,64 @@
+{
+  "avid" : [
+    {
+      "name" : "Piedmont Healthcare",
+      "url" : "https://piedmont.org",
+      "img" : "piedmont.png",
+      "imglarge" : "piedmont-large.png",
+      "body" : "While working for AVID I was the lead developer on the Piedmont Healthcare site redesign. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site. The most notable (and award-winning!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>."
+    },
+    {
+      "name" : "Tanner Health System",
+      "url" : "https://tanner.org",
+      "img" : "tanner.png",
+      "imglarge" : "tanner-large.png",
+      "body" : "This was another site redesign for which I was the lead developer and also involved migrating content from an existing CMS into the proprietary AVID CMS. Multiple subsites and accompanying layouts were developed, with a variety of custom tools and functionality throughout."
+    },
+    {
+      "name" : "The Scope",
+      "url" : "http://www.thescope.org",
+      "img" : "scope.png",
+      "imglarge" : "scope-large.png",
+      "body" : "The Scope is Tanner Health System's blog and uses the same blog module that I developed for Piedmont Healthcare's Living Better blog, with some additional functionality created specifically for this project."
+    },
+    {
+      "name" : "Boys Town Milestones",
+      "url" : "https://boystownapp.aviddesign.com",
+      "img" : "boystown.png",
+      "imglarge" : "boystown-large.png",
+      "body" : "Boys Town Milestones is a mobile app with iPhone and Android versions, both of which pull their data from a web application. Marketed towards new parents, the apps provide users with the ability to sign up for and receive push notifications whenever new content is updated that is relevant to their children's ages. I took the designs from AVID and built the functionality and mobile apps."
+    }
+  ],
+  "rp" : [
+    {
+      "name" : "ResearchPipe",
+      "url" : "https://demo.researchpipe.com",
+      "img" : "researchpipe.png",
+      "imglarge" : "researchpipe-large.png",
+      "body" : "ResearchPipe is a data publishing and collaboration platform, built from the ground up for research scientists in Drupal 7 and containing a huge amount of custom developed functionality."
+    },
+    {
+      "name" : "ResearchPipe.com",
+      "url" : "https://researchpipe.com",
+      "img" : "researchpipe-marketing.png",
+      "imglarge" : "researchpipe-marketing-large.png",
+      "body" : "Marketing site for the core ResearchPipe SAAS product, also built using Drupal."
+    }
+  ],
+  "wsw" : [
+    {
+      "name" : "WebsiteWorker Support Portal",
+      "url" : "http://team.websiteworker.com",
+      "img" : "team.png",
+      "imglarge" : "team-large.png",
+      "body" : "A custom support/ticketing portal for various product lines, built using Drupal 7. It makes heavy usage of Organic Groups and Drupal Commerce to provide distinct support portals for various product lines while using the same Drupal codebase and database. Contains features developed specifically for the project such as project milestones, calendars with draggable date assignments for tickets, Drupal Commerce integration including automated / scheduled invoicing, and a help article knowledgebase."
+    },
+    {
+      "name" : "UGA Testing Services",
+      "url" : "https://testing.uga.edu",
+      "img" : "uts.png",
+      "imglarge" : "uts-large.png",
+      "body" : "Integrated with an existing Drupal 7 site, this project involved creating an online test scheduling system that allows students to register for exams. Students can choose from available time blocks based on exams they already have scheduled and seat availablity. The system provides admin users with room and seat management as well as an extremely robust set of options to limit or override days/hours of availablity for exams and/or rooms."
+    }
+  ]
+}

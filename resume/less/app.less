@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
+@font-family-sans-serif:  'Open Sans', 'Helvetica Neue',Helvetica,Arial,sans-serif;
+@font-family-serif:       'Gentium Book Basic', Georgia, "Times New Roman", Times, serif;
+
+h1,h2,h3,h4,h5,h6{
+  font-family: @font-family-sans-serif;
+}
+
+body{
+  font-family: @font-family-serif;
+  background: #f3f3f3;
+}
+
+h1{
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+h3{
+  font-size: 25px;
+  &.experience-title{
+    font-size:22px;
+  }
+}
+
+h4{
+  font-size: 20px;
+  &.experience-timeline{
+    font-size: 18px;
+    font-style: italic;
+  }
+  &.skillset-title{
+    font-size: 16px;
+    //border-bottom: 1px solid;
+  }
+}
+
+.badge{
+  max-height: 150px;
+  max-width: 100%;
+  background: #dadada;
+  padding: 0.5em;
+  float: left;
+  margin-right: 20px;
+}
+
+.header{
+  h1{
+    font-weight: bold;
+    margin: 0;
+  }
+  padding: 20px 6%;
+  border-bottom: 2px solid #a0dbf9;
+  max-width: 100%;
+  background: #fff;
+
+  .contact{
+    float: right;
+    list-style-type: none;
+
+  }
+}
+
+
+
+.content{
+  padding: 20px 0;
+  border-bottom: 2px solid #dadada;
+  min-height: 200px;
+}
+
+.section-experience{
+  padding: 20px 0;
+  border-bottom: 1px solid #dadada;
+  &:first-child{
+    padding-top: 0;
+  }
+
+  &:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.skillset{
+  clear: both;
+  margin-bottom: 20px;
+  overflow: auto;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+ul{
+  margin-bottom: 0;
+  &.skills{
+    list-style-type: none;
+    margin: 0;
+    li{
+      float: left;
+      display: inline-block;
+      border: 1px solid #dadada;
+      border-radius: 10px;
+      padding: 5px 15px;
+      margin: 0 5px 5px 0;
+      background: #fff;
+      font-family: @font-family-sans-serif;
+      font-size:14px;
+    }
+  }
+}
