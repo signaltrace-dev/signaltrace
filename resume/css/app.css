@@ -29,12 +29,14 @@ h3.experience-title {
 h4 {
   font-size: 20px;
 }
-h4.experience-timeline {
-  font-size: 18px;
-  font-style: italic;
-}
 h4.skillset-title {
   font-size: 16px;
+}
+h5 {
+  font-size: 17px;
+}
+h5.experience-timeline {
+  font-style: italic;
 }
 .badge {
   max-height: 150px;
