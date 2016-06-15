@@ -8,7 +8,7 @@
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/featherlight.min.css">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/app.min.css?v=2">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
