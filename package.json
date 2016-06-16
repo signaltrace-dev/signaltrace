@@ -1,15 +1,15 @@
 {
-  "name": "jeff_glenn_resume",
+  "name": "signaltrace-landing",
   "version": "0.1.0",
-  "description": "Responsive HTML resume.",
+  "description": "signal.trace() landing page.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/signaltrace-dev/jeffglenn-resume.git"
+    "url": "git://github.com/signaltrace-dev/signaltrace.git"
   },
   "author": "Jeff Glenn",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/signaltrace-dev/jeffglenn-resume/issues"
+    "url": "https://github.com/signaltrace-dev/signaltrace/issues"
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.6.1",
