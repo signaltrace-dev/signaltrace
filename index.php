@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
-    <link rel="stylesheet" href="css/app.min.css?v=4">
+    <link rel="stylesheet" href="css/app.min.css?v=5">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
