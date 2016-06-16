@@ -2,19 +2,35 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      js: {
-        src: [
-          'js/src/app.js'],
-        dest: 'js/app.js'
-      },
-    },
     less:{
       development:{
         files:{
-          "css/app.css" : "less/app.less"
+          "css/src/app.css" : "css/src/less/app.less"
         }
       },
+    },
+    concat: {
+      js: {
+        src: [
+          'js/src/jquery.js',
+          'js/src/**/*.js'],
+        dest: 'js/app.js'
+      },
+      css: {
+        src: [
+          'css/src/imports.css',
+          'css/src/foundation.css',
+          'css/src/app.css',
+          'css/src/featherlight.css'
+        ],
+        dest: 'css/src/app.combined.css'
+      }
+    },
+    cssmin: {
+      css:{
+        src: 'css/src/app.combined.css',
+        dest: 'css/app.min.css'
+      }
     },
     uglify: {
       options: {
@@ -27,12 +43,7 @@ module.exports = function(grunt) {
         }
       },
     },
-    cssmin: {
-      css:{
-        src: 'css/app.css',
-        dest: 'css/app.min.css'
-      }
-    },
+
     watch:{
       css:{
         files: ['less/**/*.less'],
