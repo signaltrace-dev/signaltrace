@@ -6,9 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/featherlight.min.css">
-    <link rel="stylesheet" href="css/app.min.css?v=2">
+    <link rel="stylesheet" href="css/app.min.css?v=4">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
@@ -32,7 +30,7 @@
           virtualization, and cloud solutions.
         </p>
         <p>Want a more formalized list of my qualifications? <a href="resume/">Here you go.</a></p>
-        <a href="resume/"><img src="img/headshot.png" class="badge" alt="Jeff Glenn"></a>
+        <a href="resume/"><img src="img/headshot.jpg" class="badge" alt="Jeff Glenn"></a>
         <div class="social-icons">
           <a href="https://github.com/signaltrace-dev/"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/signaltrace"><i class="fa fa-linkedin"></i></a>
@@ -48,9 +46,7 @@
             <li><a href="#contact" data-section="contact">Contact</a></li>
           </ul>
         </div>
-
       </div>
-      <div id="navscroll"></div>
     </div>
     <div id="work" class="section-body row medium-up-3 large-up-4 work">
         <h2 class="section-title">Work</h2>
@@ -72,7 +68,6 @@
           </div>
         </div>
         <div id="projects" class="row medium-up-3 large-up-4 projects-wrapper"></div>
-
     </div>
     <div id="skills" class="row content skills">
       <div class="large-12 columns">
@@ -95,14 +90,13 @@
           <h3 class="section-subheader">So what do you think? Want to team up and make something cool?</h3>
           <div id="contact-form" class="clearfix">
               <?php
-              //init variables
-              $cf = array();
-              $sr = false;
+                $cf = array();
+                $sr = false;
 
-              if(isset($_SESSION['cf_returndata'])){
-                  $cf = $_SESSION['cf_returndata'];
-                  $error_fields = !empty($cf['error_fields']) ? $cf['error_fields'] : array();
-                  $sr = true;
+                if(isset($_SESSION['cf_returndata'])){
+                    $cf = $_SESSION['cf_returndata'];
+                    $error_fields = !empty($cf['error_fields']) ? $cf['error_fields'] : array();
+                    $sr = true;
               }?>
               <ul id="errors" class="no-bullet <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
                   <?php
@@ -141,11 +135,8 @@
                     <textarea id="message" name="message" placeholder="Some super cool idea" required rows="6"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
                   </div>
                 </div>
-
-                  <span id="loading"></span>
-                  <em><span class="required">*</span> indicates a required field</em>
-                  <p><input type="submit" class="button btn-submit expanded" value="Get In Touch!"></input></p>
-
+                <em><span class="required">*</span> indicates a required field</em>
+                <p><input type="submit" class="button btn-submit expanded" value="Get In Touch!"></input></p>
               </form>
               <?php unset($_SESSION['cf_returndata']); ?>
           </div>
@@ -159,11 +150,6 @@
     <div class="row footer"></div>
   </body>
   <footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/vendor/headhesive.min.js"></script>
-    <script src="js/vendor/featherlight.min.js"></script>
     <script src="js/app.min.js"></script>
     <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
