@@ -13,8 +13,12 @@ module.exports = function(grunt) {
       js: {
         src: [
           'js/src/jquery.js',
-          'js/src/**/*.js'],
-        dest: 'js/app.js'
+          'js/src/foundation.js',
+          'js/src/helpers.js',
+          'js/src/headhesive.js',
+          'js/src/featherlight.js',
+          'js/src/app.js'],
+        dest: 'js/src/app.combined.js'
       },
       css: {
         src: [
