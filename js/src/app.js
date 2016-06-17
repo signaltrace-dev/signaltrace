@@ -16,7 +16,8 @@ $(document).ready(function(){
   };
   var header = new Headhesive('.nav', options);
 
-  $('.nav a').on('click', function(){
+  $('.nav a').on('click', function(e){
+    e.preventDefault();
     var section = $(this).data('section');
     if(section){
       $('html, body').animate({
