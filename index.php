@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="signal.trace()">
+    <meta property="og:image" content="https://signaltrace.net/img/st-badge.png">
+    <meta property="og:description" content="Software design and development consulting, from start to finish.">
+
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
     <link rel="stylesheet" href="css/app.min.css?v=5">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
