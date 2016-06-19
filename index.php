@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://signaltrace.net" />
     <meta property="og:title" content="signal.trace()">
     <meta property="og:image" content="https://signaltrace.net/img/st-badge.png">
     <meta property="og:description" content="Software design and development consulting, from start to finish.">
