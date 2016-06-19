@@ -25,7 +25,7 @@
     <div id="about" class="row header">
       <div class="hero">
         <h1><img class="badge-brand" src="img/st-badge.png" alt="SignalTrace logo">signal.trace</h1>
-        <p>Hey there! My name is Jeff, and I'm a full stack web developer currently based out of Atlanta, Georgia but
+        <p>Hey there! My name is Jeff, and I'm a full stack web developer currently living in Atlanta, Georgia but
           working remotely from anywhere that I can find a WiFi signal.
           I'm a lifelong geek and lover of all things technology-related, and I would love to work on your next
           project.
@@ -35,7 +35,7 @@
           and development using HTML/CSS/JS, back-end development using C#/PHP/Ruby, all the way down to server administration,
           virtualization, and cloud solutions.
         </p>
-        <p>Want a more formalized list of my qualifications? <a href="resume/">Here you go.</a></p>
+        <p>Want a more formalized list of my qualifications? <a href="resume/" target="_blank">Here you go.</a></p>
         <a href="resume/"><img src="img/headshot.jpg" class="badge" alt="Jeff Glenn"></a>
         <div class="social-icons">
           <a href="https://github.com/signaltrace-dev/"><i class="fa fa-github"></i></a>
