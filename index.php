@@ -12,7 +12,7 @@
     <meta property="og:description" content="Software design and development consulting, from start to finish.">
 
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
-    <link rel="stylesheet" href="css/app.min.css?v=5">
+    <link rel="stylesheet" href="css/app.min.css?v=7">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
