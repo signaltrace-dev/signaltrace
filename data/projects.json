@@ -5,7 +5,7 @@
       "url" : "https://piedmont.org",
       "img" : "piedmont.png",
       "imglarge" : "piedmont-large.png",
-      "body" : "While working for AVID I was the lead developer on the Piedmont Healthcare site redesign. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site. The most notable (and award-winning!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>."
+      "body" : "While working for AVID I was the lead developer on the Piedmont Healthcare site redesign. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site. The most notable (and <a href='http://www.aviddesignblog.com/2015/11/award-winning-2015/' target='_blank'>award-winning</a>!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>."
     },
     {
       "name" : "Tanner Health System",
@@ -42,7 +42,7 @@
       "url" : "https://researchpipe.com",
       "img" : "researchpipe-marketing.png",
       "imglarge" : "researchpipe-marketing-large.png",
-      "body" : "Marketing site for the core ResearchPipe SAAS product, also built using Drupal."
+      "body" : "Marketing site for the core ResearchPipe SAAS product, built using Drupal and Bootstrap."
     }
   ],
   "wsw" : [
@@ -59,6 +59,29 @@
       "img" : "uts.png",
       "imglarge" : "uts-large.png",
       "body" : "Integrated with an existing Drupal 7 site, this project involved creating an online test scheduling system that allows students to register for exams. Students can choose from available time blocks based on exams they already have scheduled and seat availablity. The system provides admin users with room and seat management as well as an extremely robust set of options to limit or override days/hours of availablity for exams and/or rooms."
+    },
+    {
+      "name" : "FoodTalk",
+      "url" : "https://foodtalk.org",
+      "img" : "foodtalk.png",
+      "imglarge" : "foodtalk-large.png",
+      "body" : "This is an ongoing project which involves adding new features and functionality to an existing Drupal site. The site provides educational resources for users and allows them to earn achievements as they complete lessons. In addition to the achievements functionality, the project has also included responsive designs and custom reporting functionality for the site's owners."
+    }
+  ],
+  "uga" : [
+    {
+      "name" : "The Bark",
+      "url" : "https://www.fmd.uga.edu/bark/",
+      "img" : "bark.png",
+      "imglarge" : "bark-large.png",
+      "body" : "Custom employee suggestions portal developed as a WordPress plugin. The Bark provides employees with the ability to submit suggestions for workflow and process improvements. The app provides back-and-forth commenting between admin users and suggestion owners to facilitate a dialog and has been used to successfully implement process improvements."
+    },
+    {
+      "name" : "AiMView",
+      "url" : "https://aimview.fmd.uga.edu",
+      "img" : "aimview.png",
+      "imglarge" : "aimview-large.png",
+      "body" : "AiMView is a Bootstrap-based .NET MVC project that was developed to provide basic work order information to contractors and other 3rd parties. AiMView interacts with the AiM work order tracking system used by Facilities Management and provides a read-only overview of work order information."
     }
   ]
 }
