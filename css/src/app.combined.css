@@ -4274,9 +4274,13 @@ p {
 .projects-wrapper .project .project-image {
   border: 1px solid #dadada;
   border-radius: 10px;
+  cursor: pointer;
 }
 .projects-wrapper .project .project-body {
   font-size: 13px;
+}
+.work .thumbnail {
+  cursor: pointer;
 }
 .work-items {
   text-align: center;
