@@ -25,7 +25,7 @@
     <div id="about" class="row header">
       <div class="hero">
         <h1><img class="badge-brand" src="img/st-badge.png" alt="SignalTrace logo">signal.trace</h1>
-        <p>Hey there! My name is Jeff, and I'm a full stack web developer currently living in Atlanta, Georgia but
+        <p>Hey there! My name is Jeff, and I'm a full stack web developer currently living in Stamford, Connecticut but
           working remotely from anywhere that I can find a WiFi signal.
           I'm a lifelong geek and lover of all things technology-related, and I would love to work on your next
           project.
