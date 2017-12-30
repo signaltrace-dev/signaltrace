@@ -77,6 +77,6 @@ if( isset($_POST) ){
         $_SESSION['cf_returndata'] = $returndata;
 
         //redirect back to form
-        header('location: ' . $_SERVER['HTTP_REFERER']);
+        header('location: ' . $_SERVER['HTTP_REFERER']) . '#contact';
     //}
 }
