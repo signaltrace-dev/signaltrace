@@ -7,7 +7,7 @@
         "name" : "University of Miami Health System",
         "url" : "https://umiamihealth.org",
         "img" : "/assets/img/uhealth.png",
-        "images" : ["/assets/img/uhealth-large.png","/assets/img/piedmont-large.png"],
+        "images" : ["/assets/img/uhealth-large.png","/assets/img/uhealth-content.png", "assets/img/uhealth-locations.png", "assets/img/uhealth-ce.png"],
         "body" : "<p>This is an in-progress project for a complete redesign of the UHealth site. As lead developer for the project, I developed a large amount of custom functionality based on ongoing conversations with the client.</p>",
         "notes": [
           "Custom components for reusable front-end elements",

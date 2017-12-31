@@ -10772,33 +10772,38 @@ exports.default = {
     },
     computed: {},
     data: function data() {
-        return {};
+        return {
+            currentProject: this.project
+        };
     },
 
     methods: {},
     mounted: function mounted() {},
     watch: {
+        currentProject: function currentProject() {
+            if (this.currentProject) {}
+        },
         isOpen: function isOpen() {
             var comp = this;
             if (this.isOpen) {
                 if (this.project && this.project.images) {
-
-                    $.featherlight('#project-lightbox', {
-                        afterOpen: function afterOpen() {
-                            console.dir(comp.project);
-
-                            $('.project-images').slick();
-                            console.log('huh');
-                        },
-                        afterClose: function afterClose() {
-                            if ($('.slick-initialized').length > 0) {
-                                $('.project-images').slick('unslick');
+                    var element = $(comp.$refs.projectLightbox);
+                    setTimeout(function () {
+                        $.featherlight(element, {
+                            afterOpen: function afterOpen() {
+                                $('.project-images').slick();
+                            },
+                            afterClose: function afterClose() {
+                                if ($('.slick-initialized').length > 0) {
+                                    $('.project-images').slick('unslick');
+                                }
+                                comp.$emit('lightbox-closed');
+                                comp.currentProject = {};
                             }
-                            comp.$emit('lightbox-closed');
-                        }
-                    });
+                        });
+                    }, .5);
                 }
-            }
+            } else {}
         }
     },
     updated: function updated() {}
@@ -26525,15 +26530,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "lightbox", attrs: { id: "project-lightbox" } },
+    {
+      ref: "projectLightbox",
+      staticClass: "lightbox",
+      attrs: { id: "project-lightbox" }
+    },
     [
       _vm.project && _vm.project.images
         ? _c(
             "div",
-            {
-              staticClass: "slider project-images",
-              attrs: { id: "project-images" }
-            },
+            { staticClass: "project-images", attrs: { id: "project-images" } },
             _vm._l(_vm.project.images, function(image) {
               return _c("img", { attrs: { src: image } })
             })

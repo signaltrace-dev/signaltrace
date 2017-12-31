@@ -13,6 +13,9 @@
 
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick-theme.css">
+    
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
