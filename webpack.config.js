@@ -54,7 +54,11 @@ module.exports = {
         ]
     },
     plugins: [
-        extractSass
+        extractSass,
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
     ],
     resolve: {
         alias: {

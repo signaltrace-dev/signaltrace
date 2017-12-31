@@ -7,7 +7,7 @@
         "name" : "University of Miami Health System",
         "url" : "https://umiamihealth.org",
         "img" : "/assets/img/uhealth.png",
-        "imglarge" : "/assets/img/uhealth-large.png",
+        "images" : ["/assets/img/uhealth-large.png","/assets/img/uhealth-content.png", "assets/img/uhealth-locations.png", "assets/img/uhealth-ce.png"],
         "body" : "<p>This is an in-progress project for a complete redesign of the UHealth site. As lead developer for the project, I developed a large amount of custom functionality based on ongoing conversations with the client.</p>",
         "notes": [
           "Custom components for reusable front-end elements",
@@ -22,14 +22,14 @@
         "name" : "Piedmont Healthcare",
         "url" : "https://www.piedmont.org",
         "img" : "/assets/img/piedmont.png",
-        "imglarge" : "/assets/img/piedmont-large.png",
+        "images" : ["/assets/img/piedmont-large.png"],
         "body" : "<p>I was the lead developer on a site redesign for Piedmont Healthcare. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site.</p><p>The most notable (and <a href='http://www.aviddesignblog.com/2015/11/award-winning-2015/' target='_blank'>award-winning</a>!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>.</p>"
       },
       {
         "name" : "CareOregon",
         "url" : "https://careoregon.org",
         "img" : "/assets/img/careoregon.png",
-        "imglarge" : "/assets/img/careoregon-large.png",
+        "images" : ["/assets/img/careoregon-large.png"],
         "body" : "<p>The CareOregon site redesign is an ongoing project for which I am the lead developer. Using Sitefinity 10, the redesign has been mostly focused on building custom page layouts and reusable Sitefinity widgets for common page components.</p>",
         "notes": [
           "Custom content types and functionality for News, Events, and Stories",
@@ -42,14 +42,14 @@
         "name" : "Tanner Health System",
         "url" : "http://tanner.org",
         "img" : "/assets/img/tanner.png",
-        "imglarge" : "/assets/img/tanner-large.png",
+        "images" : ["/assets/img/tanner-large.png"],
         "body" : "<p>This was another site redesign for which I was the lead developer and also involved migrating content from an existing CMS into the proprietary AVID CMS.</p><p>Multiple subsites and accompanying layouts were developed, with a variety of custom tools and functionality throughout.</p>"
       },
       {
         "name" : "Piedmont Heart",
         "url" : "https://www.piedmont.org/heart",
         "img" : "/assets/img/piedmont-heart.png",
-        "imglarge" : "/assets/img/piedmont-heart-large.png",
+        "images" : ["/assets/img/piedmont-heart-large.png"],
         "body" : "<p>Piedmont Healthcare needed a subsite developed on a very tight timeline, so I leveraged existing custom functionality that I had developed for their main site to build out the Piedmont Heart subsite.</p><p>Overseeing the project and working closely with other developers and designers, we were able to meet our timeline goals and deliver something that allows for much easier long-term maintainability.</p>",
         "notes": [
           "Extended existing Campaign Page management tool (custom-developed for a previous project on the AVIDCMS) to add more features",
@@ -60,21 +60,21 @@
         "name" : "Baptist Health South Florida - Carevenience",
         "url" : "https://baptisthealth.net/en/lp/pages/carevenience.aspx",
         "img" : "/assets/img/baptist-care.png",
-        "imglarge" : "/assets/img/baptist-care-large.png",
+        "images" : ["/assets/img/baptist-care-large.png"],
         "body" : "<p>Carevenience is a single-page application using Vue, integrated with the Baptist Sharepoint environment.</p><p>The application allows patients to select from a list of ailments and get the best recommended treatment options, with additional filtering for cost, distance, and availability.</p>"
       },
       {
         "name" : "The Scope",
         "url" : "http://www.thescope.org",
         "img" : "/assets/img/scope.png",
-        "imglarge" : "/assets/img/scope-large.png",
+        "images" : ["/assets/img/scope-large.png"],
         "body" : "<p>The Scope is Tanner Health System's blog and uses the same blog module that I developed for Piedmont Healthcare's Living Better blog, with some additional functionality created specifically for this project.</p>"
       },
       {
         "name" : "Boys Town Milestones",
         "url" : "https://boystownapp.aviddesign.com",
         "img" : "/assets/img/boystown.png",
-        "imglarge" : "/assets/img/boystown-large.png",
+        "images" : ["/assets/img/boystown-large.png"],
         "body" : "<p>Boys Town Milestones is a mobile app with iPhone and Android versions, both of which pull their data from a web application. Marketed towards new parents, the apps provide users with the ability to sign up for and receive push notifications whenever new content is updated that is relevant to their children's ages. I took the designs from AVID and built the functionality and mobile apps.</p>"
       }
     ]
@@ -87,7 +87,7 @@
         "name" : "ResearchPipe",
         "url" : "https://demo.researchpipe.com",
         "img" : "/assets/img/researchpipe.png",
-        "imglarge" : "/assets/img/researchpipe-large.png",
+        "images" : ["/assets/img/researchpipe-large.png"],
         "body" : "<p>ResearchPipe is a data publishing and collaboration platform built from the ground up for research scientists in Drupal 7 and containing a huge amount of custom developed functionality.</p><p>As the sole developer on this project, I was contracted to build out a platform that could integrate with an existing Drupal setup and could eventually be spun off into a separate product. Features and functionality came from ongoing conversations with the client and research scientists.</p>",
         "notes": [
           "Leveraged Organic Groups, Workflows and Revisions among other Drupal modules",
@@ -100,7 +100,7 @@
         "name" : "ResearchPipe.com",
         "url" : "https://researchpipe.com",
         "img" : "/assets/img/researchpipe-marketing.png",
-        "imglarge" : "/assets/img/researchpipe-marketing-large.png",
+        "images" : ["/assets/img/researchpipe-marketing-large.png"],
         "body" : "<p>Marketing site for the core ResearchPipe SAAS product, built using Drupal and Bootstrap.</p>"
       }
     ]
@@ -113,7 +113,7 @@
         "name" : "WebsiteWorker Support Portal",
         "url" : "http://team.websiteworker.com",
         "img" : "/assets/img/team.png",
-        "imglarge" : "/assets/img/team-large.png",
+        "images" : ["/assets/img/team-large.png"],
         "body" : "<p>A custom support/ticketing portal for various product lines that I built using Drupal 7. It makes heavy usage of Organic Groups and Drupal Commerce to provide distinct support portals for various product lines while using the same Drupal codebase and database.</p><p>I was contracted to build a platform that would allow multiple developers, project managers and clients to track support requests and manage billable hours.</p><p>Contains features developed specifically for the project such as project milestones, calendars with draggable date assignments for tickets, Drupal Commerce integration including automated / scheduled invoicing, and a help article knowledgebase.</p>",
         "notes": [
           "Custom Issue Calendar with drag and drop reordering and color-coded categorization",
@@ -126,14 +126,14 @@
         "name" : "UGA Testing Services",
         "url" : "https://testing.uga.edu",
         "img" : "/assets/img/uts.png",
-        "imglarge" : "/assets/img/uts-large.png",
+        "images" : ["/assets/img/uts-large.png"],
         "body" : "<p>Integrated with an existing Drupal 7 site, this project involved creating an online test scheduling system that allows students to register for exams.</p><p>It allowed students to choose from available time blocks based on exams they already have scheduled and seat availablity.</p><p>The system provided admin users with room and seat management as well as an extremely robust set of options to limit or override days/hours of availablity for exams and/or rooms.</p>"
       },
       {
         "name" : "FoodTalk",
         "url" : "https://foodtalk.org",
         "img" : "/assets/img/foodtalk.png",
-        "imglarge" : "/assets/img/foodtalk-large.png",
+        "images" : ["/assets/img/foodtalk-large.png"],
         "body" : "<p>This project involved adding new features and functionality to an existing Drupal site. The site provides educational resources for users and allows them to earn achievements as they complete lessons.</p><p>In addition to the achievements functionality, the project has also included responsive designs and custom reporting functionality for the site's owners.</p>"
       }
     ]
@@ -146,14 +146,14 @@
         "name" : "The Bark",
         "url" : "https://www.fmd.uga.edu/bark/",
         "img" : "/assets/img/bark.png",
-        "imglarge" : "/assets/img/bark-large.png",
+        "images" : ["/assets/img/bark-large.png"],
         "body" : "Custom employee suggestions portal developed as a WordPress plugin. The Bark provides employees with the ability to submit suggestions for workflow and process improvements. The app provides back-and-forth commenting between admin users and suggestion owners to facilitate a dialog and has been used to successfully implement process improvements."
       },
       {
         "name" : "AiMView",
         "url" : "https://aimview.fmd.uga.edu",
         "img" : "/assets/img/aimview.png",
-        "imglarge" : "/assets/img/aimview-large.png",
+        "images" : ["/assets/img/aimview-large.png"],
         "body" : "AiMView is a Bootstrap-based .NET MVC project that was developed to provide basic work order information to contractors and other 3rd parties. AiMView interacts with the AiM work order tracking system used by Facilities Management and provides a read-only overview of work order information."
       }
     ]

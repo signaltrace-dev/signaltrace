@@ -5,10 +5,10 @@ import Headhesive from 'headhesive';
 import whatInput from 'what-input';
 import Project from './components/Project.vue';
 import ProjectGroup from './components/ProjectGroup.vue';
+import ProjectLightbox from './components/ProjectLightbox.vue';
 
 $(document).ready(function(){
   var signaltrace = {};
-
   if(($('.layout-large').css("display") != "none")){signaltrace.displayMode = "large";}
   if(($('.layout-medium').css("display") != "none")){signaltrace.displayMode = "medium";}
   if(($('.layout-small').css("display") != "none")){signaltrace.displayMode = "small";}
@@ -37,15 +37,25 @@ $(document).ready(function(){
   new Vue({
     el: '#projects',
     data: {
+      lightboxOpen: false,
         projectData: {},
         selectedGroup: '',
-        selectedProjects: []
+        selectedProjects: [],
+        selectedProject: {}
     },
     components: {
       'project': Project,
-      'project-group': ProjectGroup
+      'project-group': ProjectGroup,
+      'project-lightbox': ProjectLightbox
     },
     methods: {
+      closeLightbox: function(){
+        this.lightboxOpen = false;
+      },
+      showLightbox: function(project){
+        this.selectedProject = project;
+        this.lightboxOpen = true;
+      },
       showProjects: function(group){
         this.selectedGroup = group.client;
         this.selectedProjects = group.projects;
@@ -59,6 +69,7 @@ $(document).ready(function(){
           app.projectData = allProjects;
         }
       });
+
     }
   });
 });

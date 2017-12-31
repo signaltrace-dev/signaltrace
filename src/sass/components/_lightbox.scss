@@ -1,0 +1,21 @@
+    .featherlight-content{
+        max-width: 75%;
+    }
+
+    .slick-prev:before, .slick-next:before{
+        color: #000 !important;
+    }
+
+    @media screen and (max-width: 639px){
+        .featherlight-content{
+            max-width: 90%;
+            padding: 25px 25px 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 399px){
+        .featherlight-content{
+            max-width: 100%;
+            padding: 25px 25px 0 !important;
+        }
+    }

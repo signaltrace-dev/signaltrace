@@ -13,6 +13,9 @@
 
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick-theme.css">
+    
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
@@ -62,8 +65,9 @@
             <div class="grid-x grid-margin-x">
               <project-group v-for="group in projectData" :group="group" :selected-group="selectedGroup" v-on:group-selected="showProjects"></project-group>
             </div>
+            <project-lightbox :project="selectedProject" :is-open="lightboxOpen" v-on:lightbox-closed="closeLightbox"></project-lightbox>
             <div id="project-list" class="grid-x grid-margin-x projects-wrapper" v-show="selectedProjects.length > 0">
-              <project v-for="project in selectedProjects" :project-data="project"></project>
+              <project v-for="project in selectedProjects" :project-data="project" v-on:project-selected="showLightbox"></project>
             </div>
           </div>
     </div>

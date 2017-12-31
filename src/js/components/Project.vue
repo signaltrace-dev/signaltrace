@@ -1,6 +1,6 @@
 <template>
     <div class="cell medium-6 project">
-        <a class="project__image" target="_blank" :data-featherlight="projectData.imglarge"><img class="project-image" :src="projectData.img"></a>
+        <a class="project__image" data-featherlight="#project-lightbox" target="_blank" v-on:click.prevent="projectSelected"><img class="project-image" :src="projectData.img"></a>
         <h3 class="project-title">{{projectData.name}}</h3><a target="_blank" class="project-url" :href="projectData.url">{{projectData.url}}</a>
         <div class="project-body">
             <div class="project-body__content" v-html="projectData.body"></div>
@@ -20,13 +20,14 @@
         },
         data(){
             return{
+                foo: 'bar'
             }
         },
         methods:{
-
+            projectSelected: function(){
+                this.$emit('project-selected', this.projectData);
+            }
         }
     }
-
-
 </script>
 
