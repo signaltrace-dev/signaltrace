@@ -125,17 +125,10 @@ p{
     background-color: #405554;
     background-repeat: repeat-none;
     background-position: center left;
-    padding-top: 3em;
+    padding-top: .5em;
     padding-bottom: 1em;
-    background: url('~/assets/img/desktop-overlay.jpg');
-
-    /* background-attachment: fixed; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bgl.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bgl.jpg', sizingMethod='scale')";
+    background: url(~/assets/img/escheresque_ste.png) center center scroll;
+    background-repeat: repeat;
   }
   &.contact{
     padding-bottom: 40px;
@@ -230,10 +223,9 @@ p{
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid #ffffff;
-
+  transition: background-size 0.15s ease;
   &:hover{
     cursor: pointer;
-    border: 1px solid #f8faff;
   }
 }
 
@@ -336,6 +328,9 @@ form{
 @media screen and (min-width: 1400px){
   .client-logo{
     background-size: 85%;
+    &:hover{
+      background-size: 80%;
+    }
   }
 }
 
@@ -346,7 +341,10 @@ form{
     margin: 40px auto 0 auto;
   }
   .client-logo{
-    background-size: 75%;
+    background-size: 85%;
+    &:hover{
+      background-size: 80%;
+    }
   }
 }
 
@@ -406,10 +404,42 @@ form{
   }
   .client-logo{
     background-size: 70%;
+    width: 75%;
+    margin: 0 auto;
+    &:hover{
+      background-size: 65%;
+    }
   }
 
   .section-body{
     padding: 0 1rem;
     max-width: 100%;
+    .section-title {
+      margin: 40px auto;
+      font-size: 2rem;
+    }
+  }
+
+  .content{
+    .skills{
+      padding-top: .5em;
+    }
+  }
+}
+
+@media screen and (max-width: 399px){
+  .client-logo{
+    background-size: 100%;
+    width: 75%;
+    margin: 0 auto;
+    &:hover{
+      background-size: 95%;
+    }
+  }
+
+  .menu{
+    a{
+      padding: .7rem .5rem;
+    }
   }
 }

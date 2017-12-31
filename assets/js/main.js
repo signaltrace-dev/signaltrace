@@ -566,14 +566,10 @@ $(document).ready(function () {
       var app = this;
 
       $.getJSON("/data/projects.json", function (allProjects) {
-        console.log('what');
-
-        console.dir(allProjects);
         if (allProjects) {
           app.projectData = allProjects;
         }
       });
-      console.log('huh');
     }
   });
 });

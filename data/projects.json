@@ -19,11 +19,18 @@
         ]
       },
       {
+        "name" : "Piedmont Healthcare",
+        "url" : "https://www.piedmont.org",
+        "img" : "/assets/img/piedmont.png",
+        "imglarge" : "/assets/img/piedmont-large.png",
+        "body" : "<p>I was the lead developer on a site redesign for Piedmont Healthcare. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site.</p><p>The most notable (and <a href='http://www.aviddesignblog.com/2015/11/award-winning-2015/' target='_blank'>award-winning</a>!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>.</p>"
+      },
+      {
         "name" : "CareOregon",
         "url" : "https://careoregon.org",
         "img" : "/assets/img/careoregon.png",
         "imglarge" : "/assets/img/careoregon-large.png",
-        "body" : "<p>The CareOregon site redesign is an ongoing project on which I am the lead developer. Using Sitefinity 10, the redesign has been mostly focused on building custom page layouts and reusable Sitefinity widgets for common page components.</p>",
+        "body" : "<p>The CareOregon site redesign is an ongoing project for which I am the lead developer. Using Sitefinity 10, the redesign has been mostly focused on building custom page layouts and reusable Sitefinity widgets for common page components.</p>",
         "notes": [
           "Custom content types and functionality for News, Events, and Stories",
           "Integration with the AVIDCMS Classes and Events tool, including custom search, details, and registration widgets",
@@ -32,8 +39,15 @@
         ]
       },
       {
+        "name" : "Tanner Health System",
+        "url" : "http://tanner.org",
+        "img" : "/assets/img/tanner.png",
+        "imglarge" : "/assets/img/tanner-large.png",
+        "body" : "<p>This was another site redesign for which I was the lead developer and also involved migrating content from an existing CMS into the proprietary AVID CMS.</p><p>Multiple subsites and accompanying layouts were developed, with a variety of custom tools and functionality throughout.</p>"
+      },
+      {
         "name" : "Piedmont Heart",
-        "url" : "https://piedmont.org/heart",
+        "url" : "https://www.piedmont.org/heart",
         "img" : "/assets/img/piedmont-heart.png",
         "imglarge" : "/assets/img/piedmont-heart-large.png",
         "body" : "<p>Piedmont Healthcare needed a subsite developed on a very tight timeline, so I leveraged existing custom functionality that I had developed for their main site to build out the Piedmont Heart subsite.</p><p>Overseeing the project and working closely with other developers and designers, we were able to meet our timeline goals and deliver something that allows for much easier long-term maintainability.</p>",
@@ -48,20 +62,6 @@
         "img" : "/assets/img/baptist-care.png",
         "imglarge" : "/assets/img/baptist-care-large.png",
         "body" : "<p>Carevenience is a single-page application using Vue, integrated with the Baptist Sharepoint environment.</p><p>The application allows patients to select from a list of ailments and get the best recommended treatment options, with additional filtering for cost, distance, and availability.</p>"
-      },
-      {
-        "name" : "Piedmont Healthcare",
-        "url" : "http://piedmont.org",
-        "img" : "/assets/img/piedmont.png",
-        "imglarge" : "/assets/img/piedmont-large.png",
-        "body" : "<p>I was the lead developer on a site redesign for Piedmont Healthcare. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site.</p><p>The most notable (and <a href='http://www.aviddesignblog.com/2015/11/award-winning-2015/' target='_blank'>award-winning</a>!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>.</p>"
-      },
-      {
-        "name" : "Tanner Health System",
-        "url" : "http://tanner.org",
-        "img" : "/assets/img/tanner.png",
-        "imglarge" : "/assets/img/tanner-large.png",
-        "body" : "<p>This was another site redesign for which I was the lead developer and also involved migrating content from an existing CMS into the proprietary AVID CMS.</p><p>Multiple subsites and accompanying layouts were developed, with a variety of custom tools and functionality throughout.</p>"
       },
       {
         "name" : "The Scope",
@@ -88,7 +88,13 @@
         "url" : "https://demo.researchpipe.com",
         "img" : "/assets/img/researchpipe.png",
         "imglarge" : "/assets/img/researchpipe-large.png",
-        "body" : "<p>ResearchPipe is a data publishing and collaboration platform, built from the ground up for research scientists in Drupal 7 and containing a huge amount of custom developed functionality.</p>"
+        "body" : "<p>ResearchPipe is a data publishing and collaboration platform built from the ground up for research scientists in Drupal 7 and containing a huge amount of custom developed functionality.</p><p>As the sole developer on this project, I was contracted to build out a platform that could integrate with an existing Drupal setup and could eventually be spun off into a separate product. Features and functionality came from ongoing conversations with the client and research scientists.</p>",
+        "notes": [
+          "Leveraged Organic Groups, Workflows and Revisions among other Drupal modules",
+          "Custom functionality and dashboards based on user role (Primary Investigator, Data Manager, etc)",
+          "Google Maps integration to map data collected from research expeditions",
+          "Custom Quarterly Reporting functionality to report on all collected data"
+        ]
       },
       {
         "name" : "ResearchPipe.com",
@@ -108,7 +114,13 @@
         "url" : "http://team.websiteworker.com",
         "img" : "/assets/img/team.png",
         "imglarge" : "/assets/img/team-large.png",
-        "body" : "<p>A custom support/ticketing portal for various product lines, built using Drupal 7. It makes heavy usage of Organic Groups and Drupal Commerce to provide distinct support portals for various product lines while using the same Drupal codebase and database.</p><p>Contains features developed specifically for the project such as project milestones, calendars with draggable date assignments for tickets, Drupal Commerce integration including automated / scheduled invoicing, and a help article knowledgebase.</p>"
+        "body" : "<p>A custom support/ticketing portal for various product lines that I built using Drupal 7. It makes heavy usage of Organic Groups and Drupal Commerce to provide distinct support portals for various product lines while using the same Drupal codebase and database.</p><p>I was contracted to build a platform that would allow multiple developers, project managers and clients to track support requests and manage billable hours.</p><p>Contains features developed specifically for the project such as project milestones, calendars with draggable date assignments for tickets, Drupal Commerce integration including automated / scheduled invoicing, and a help article knowledgebase.</p>",
+        "notes": [
+          "Custom Issue Calendar with drag and drop reordering and color-coded categorization",
+          "Drupal Commerce integration to allow clients to purchase additional services or licensed features for various products",
+          "Email notifications based on Issue workflow",
+          "Role-based dashboards"
+        ]
       },
       {
         "name" : "UGA Testing Services",
