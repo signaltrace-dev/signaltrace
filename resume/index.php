@@ -81,7 +81,7 @@
                 <li>Design data architecture for custom web applications and large hospital websites.</li>
                 <li>Develop solutions in a variety of CMSes such as Sitecore, Sitefinity, Drupal, and proprietary systems.</li>
                 <li>Serve as technical lead and lead developer for large website builds.</li>
-                <li>Write application code in C#, PHP, and Javascript depependent on project requirements.</li>
+                <li>Write application code in C#, PHP, and Javascript dependent on project requirements.</li>
                 <li>Create front-end and back-end functionality based on client specifications and mockups.</li>                
                 <li>Provide development assistance and mentoring for other developers.</li>
                 <li>Develop technology adoption strategies and recommendations.</li>
