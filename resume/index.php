@@ -96,7 +96,7 @@
           <h4 class="experience-timeline">December 2013 - Present</h4>
           <div class="experience-body">
             <ul class="experience">
-              <li>Design, develop and implement custom web-based solutions using a mix of C#, PHP and JavaScript depending on project needs and hosting environment.</li>
+              <li>Design, develop and implement custom web-based solutions using a mix of C#, PHP and Javascript depending on project needs and hosting environment.</li>
               <li>Design web application and mobile application user interfaces based on mockups or client discussions.</li>
               <li>Translate design mockups and comps into functional HTML / CSS / JS.</li>
               <li>Create database schema and data models.</li>
@@ -113,7 +113,7 @@
           <h4 class="experience-timeline">May 2014 - May 2015</h4>
           <div class="experience-body">
             <ul class="experience">
-              <li>Developed websites, web applications, and mobile applications for clients in healthcare industry using a mixture of C#, VB and JavaScript.</li>
+              <li>Developed websites, web applications, and mobile applications for clients in healthcare industry using a mixture of C#, VB and Javascript.</li>
               <li>Translated design mockups and comps into functional HTML / CSS / JS.</li>
               <li>Implemented website solutions using proprietary CMS.</li>
               <li>Developed custom functionality as needed and integrated into CMS.</li>
@@ -200,14 +200,15 @@
           <h4 class="skillset-title">Web</h4>
         	<ul class="skills">
           	<li>HTML</li>
-          	<li>CSS</li>
+            <li>CSS</li>
+          	<li>REST APIs</li>
             <li>Less</li>
             <li>Sass</li>
             <li>jQuery</li>
             <li>Vue</li>
             <li>Knockout.js</li>
+            <li>Angular</li>
             <li>Node.js</li>
-            <li>Amazon Web Services</li>
         	</ul>
         </div>
         <div class="skillset">
@@ -215,7 +216,7 @@
           <ul class="skills">
         		<li>C#</li>
         		<li>PHP</li>
-            <li>JavaScript</li>
+            <li>Javascript</li>
         		<li>Perl</li>
         		<li>Java</li>
         		<li>Ruby</li>
@@ -262,14 +263,20 @@
             <li>Wordpress</li>
           </ul>
         </div>
-
+        <div class="skillset">
+          <h4 class="skillset-title">PaaS / IaaS</h4>
+          <ul class="skills">
+            <li>Amazon EC2</li>
+            <li>Amazon Web Services</li>
+            <li>Microsoft Azure</li>            
+        	</ul>
+        </div>
         <div class="skillset">
           <h4 class="skillset-title">Server</h4>
           <ul class="skills">
             <li>Linux</li>
             <li>Windows Server</li>
             <li>VMWare ESXi</li>
-            <li>Amazon EC2</li>
             <li>Apache</li>
             <li>IIS</li>
             <li>Tomcat</li>
