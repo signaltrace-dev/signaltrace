@@ -1,9 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: "css/[name].css",
+    filename: "css/[name].[chunkhash].css",
     //disable: process.env.NODE_ENV === "development"
 });
 
@@ -17,7 +18,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'assets'),
-        filename: 'js/[name].js'
+        filename: 'js/[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -58,7 +59,20 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
-        })
+        }),
+        new CleanWebpackPlugin(['assets/css', 'assets/js'], {
+            root: __dirname,
+            verbose: true,
+            dry: false
+        }),
+        function(){
+            this.plugin('done', stats => {
+                require('fs').writeFileSync(
+                    path.join(__dirname, 'assets/manifest.json'),
+                    JSON.stringify(stats.toJson().assetsByChunkName)
+                )
+            });
+        }
     ],
     resolve: {
         alias: {
@@ -71,5 +85,5 @@ if (inProduction) {
     module.exports.plugins.push(
         new webpack.optimize.UglifyJsPlugin()
     );
-    module.exports.output.filename = '[name].min.js';
+    module.exports.output.filename = 'js/[name].[chunkhash].min.js';
 }

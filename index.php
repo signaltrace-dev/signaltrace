@@ -10,14 +10,34 @@
     <meta property="og:title" content="signal.trace()">
     <meta property="og:image" content="https://signaltrace.net/assets/img/st-badge.png">
     <meta property="og:description" content="Software design and development consulting, from start to finish.">
-
-    <title>signal.trace() | Software design and development consulting, from start to finish.</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick/slick-theme.css">
     
+    <title>signal.trace() | Software design and development consulting, from start to finish.</title>
+
+    <link rel="stylesheet" href="assets/vendor/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick/slick-theme.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <?php
+
+      $manifest = file_get_contents("assets/manifest.json");
+      $json = !empty($manifest) ? json_decode($manifest, true) : NULL;
+      $css = [];
+      $js = [];
+
+      if(!empty($json) && !empty($json['main'])){
+        foreach($json['main'] as $file){
+          if(strpos($file, ".js") !== FALSE){
+            array_push($js, $file);
+          }
+          if(strpos($file, ".css") !== FALSE){
+            array_push($css, $file);
+          }
+        }
+      }
+    ?>
+    <?php foreach($css as $file) : ?>
+      <link rel="stylesheet" href="assets/<?php echo $file; ?>">
+    <?php endforeach; ?>
   </head>
   <body>
     <span class="layout-large"></span>
@@ -156,9 +176,11 @@
     <div class="row footer"></div>
     <script src="//code.jquery.com/jquery-latest.js"></script>
   </body>
-  <footer>
-    <script src="/assets/js/vendor/respond/respond.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+  <footer id="footer">
+    <script src="/assets/vendor/js/respond/respond.min.js"></script>
+    <?php foreach($js as $file) : ?>
+      <script src="/assets/<?php echo $file; ?>"></script>
+    <?php endforeach; ?>
     <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
