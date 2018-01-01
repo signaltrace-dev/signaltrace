@@ -10780,9 +10780,7 @@ exports.default = {
     methods: {},
     mounted: function mounted() {},
     watch: {
-        currentProject: function currentProject() {
-            if (this.currentProject) {}
-        },
+        currentProject: function currentProject() {},
         isOpen: function isOpen() {
             var comp = this;
             if (this.isOpen) {
@@ -10801,7 +10799,7 @@ exports.default = {
                                 comp.currentProject = {};
                             }
                         });
-                    }, .5);
+                    }, 100);
                 }
             } else {}
         }

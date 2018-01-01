@@ -29,9 +29,7 @@
         },
         watch:{
             currentProject: function(){
-                if(this.currentProject){
 
-                }
             },
             isOpen: function(){
                 let comp = this;
@@ -53,7 +51,7 @@
                                 comp.currentProject = {};
                             }
                         });
-                        }, .5);
+                        }, 100);
 
                     }
 
