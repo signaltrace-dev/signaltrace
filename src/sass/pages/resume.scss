@@ -114,3 +114,9 @@ ul.skills li {
     margin: 0 auto;
   }
 }
+
+@media print{
+  img{
+    display:none;
+  }
+}

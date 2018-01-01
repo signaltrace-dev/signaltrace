@@ -5,8 +5,28 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Glenn | Web Developer</title>
-    <link rel="stylesheet" href="/assets/css/vendor/foundation5.min.css">
-    <link rel="stylesheet" href="/assets/css/resume.css">
+    <link rel="stylesheet" href="/assets/vendor/css/foundation5.min.css">
+    <?php
+
+      $manifest = file_get_contents("../assets/manifest.json");
+      $json = !empty($manifest) ? json_decode($manifest, true) : NULL;
+      $css = [];
+      $js = [];
+
+      if(!empty($json) && !empty($json['resume'])){
+        foreach($json['resume'] as $file){
+          if(strpos($file, ".js") !== FALSE){
+            array_push($js, $file);
+          }
+          if(strpos($file, ".css") !== FALSE){
+            array_push($css, $file);
+          }
+        }
+      }
+    ?>
+    <?php foreach($css as $file) : ?>
+      <link rel="stylesheet" href="/assets/<?php echo $file; ?>">
+    <?php endforeach; ?>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://signaltrace.net/resume" />
