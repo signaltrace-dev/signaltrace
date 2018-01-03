@@ -1,6 +1,6 @@
 <template>
-    <div id="project-lightbox" class="lightbox" ref="projectLightbox">
-        <div id="project-images" v-if="project && project.images" class="project-images">
+    <div class="lightbox" ref="projectLightbox">
+        <div v-if="project && project.images" class="project-images">
             <img v-for="image in project.images" :src="image"></img>
         </div>
     </div>
@@ -37,7 +37,6 @@
                 {
                     if(this.project && this.project.images){
                         let element = $(comp.$refs.projectLightbox);
-                        setTimeout(function(){
                         $.featherlight(element, {
                             afterOpen: function(){
                                  $('.project-images').slick();
@@ -51,8 +50,6 @@
                                 comp.currentProject = {};
                             }
                         });
-                        }, 100);
-
                     }
 
                 }

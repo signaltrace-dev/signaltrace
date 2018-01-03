@@ -25,7 +25,7 @@
         methods:{
             showData: function(){
                 this.$emit('group-selected', this.group);
-                                $('.project__image').featherlight({
+                    $('.project__image').featherlight({
                     targetAttr: 'href'
                 });
             }

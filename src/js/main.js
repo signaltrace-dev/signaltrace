@@ -9,9 +9,7 @@ import ProjectLightbox from './components/ProjectLightbox.vue';
 
 $(document).ready(function(){
   var signaltrace = {};
-  if(($('.layout-large').css("display") != "none")){signaltrace.displayMode = "large";}
-  if(($('.layout-medium').css("display") != "none")){signaltrace.displayMode = "medium";}
-  if(($('.layout-small').css("display") != "none")){signaltrace.displayMode = "small";}
+
 
   var options = {
       offset: '#work',
@@ -37,11 +35,12 @@ $(document).ready(function(){
   new Vue({
     el: '#projects',
     data: {
+      displayMode: 'large',
       lightboxOpen: false,
-        projectData: {},
-        selectedGroup: '',
-        selectedProjects: [],
-        selectedProject: {}
+      projectData: {},
+      selectedGroup: '',
+      selectedProjects: [],
+      selectedProject: {}
     },
     components: {
       'project': Project,
@@ -49,21 +48,33 @@ $(document).ready(function(){
       'project-lightbox': ProjectLightbox
     },
     methods: {
-      closeLightbox: function(){
-        this.lightboxOpen = false;
-      },
-      showLightbox: function(project){
-        this.selectedProject = project;
-        this.lightboxOpen = true;
+      setLayout: function(){
+        let app = this;
+        if(($('.layout-large').css("display") != "none")){app.displayMode = "large";}
+        if(($('.layout-medium').css("display") != "none")){app.displayMode = "medium";}
+        if(($('.layout-small').css("display") != "none")){app.displayMode = "small";}
       },
       showProjects: function(group){
         this.selectedGroup = group.client;
         this.selectedProjects = group.projects;
+
+        if(this.displayMode === 'small'){
+          setTimeout(function(){
+            $('body, html').animate({
+              scrollTop: $('#project-list').offset().top
+            }, 1000);
+          }, 100);
+        }
       }
     },
     mounted: function(){
       let app = this;
-      
+
+      app.setLayout();
+      $(window).on('resize', function(){
+        app.setLayout();
+      })
+
       $.getJSON("/data/projects.json", function(allProjects) {
         if(allProjects){
           app.projectData = allProjects;
