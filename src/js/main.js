@@ -10,7 +10,6 @@ import ProjectLightbox from './components/ProjectLightbox.vue';
 $(document).ready(function(){
   var signaltrace = {};
 
-
   var options = {
       offset: '#work',
       offsetSide: 'top',

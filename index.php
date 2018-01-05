@@ -13,6 +13,14 @@
     
     <title>signal.trace() | Software design and development consulting, from start to finish.</title>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-ND6KJVW');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="stylesheet" href="assets/vendor/css/slick/slick.css">
     <link rel="stylesheet" href="assets/vendor/css/slick/slick-theme.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
@@ -38,8 +46,13 @@
     <?php foreach($css as $file) : ?>
       <link rel="stylesheet" href="assets/<?php echo $file; ?>">
     <?php endforeach; ?>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
+      <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND6KJVW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <span class="layout-large"></span>
     <span class="layout-medium"></span>
     <span class="layout-small"></span>
@@ -121,16 +134,14 @@
               }?>
               <div class="callout alert  <?php echo ($sr && !$cf['form_ok']) ? 'visible' : 'hidden'; ?>">
                 <h5>Whoops, looks like we're missing something!</h5>
-                <ul id="errors" class="no-bullet">
                     <?php
-                    if(isset($cf['errors']) && count($cf['errors']) > 0) :
-                        foreach($cf['errors'] as $error) :
-                    ?>
-                    <li><?php echo $error ?></li>
-                    <?php
-                        endforeach;
-                    endif;
-                    ?>
+                    if(isset($cf['errors']) && sizeof($cf['errors']) > 0) : ?>
+                      <ul id="errors" class="no-bullet">
+                      <?php foreach($cf['errors'] as $error) : ?>
+                        <li><?php echo $error ?></li>
+                      <?php endforeach; ?>
+                      </ul>
+                    <?php endif; ?>
                 </ul>
               </div>
 
@@ -160,8 +171,14 @@
                     <textarea id="message" name="message" placeholder="Some super cool idea" required rows="6"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
                   </div>
                 </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-3 cell"></div>
+                    <div class="small-7 cell">
+                      <div class="g-recaptcha" data-sitekey="6LcFaz8UAAAAAEuQB0Jlo70L_9sAQSC5rSV0j4f3"></div>
+                    </div>
+                </div>
                 <em><span class="required">*</span> indicates a required field</em>
-                <p><input type="submit" class="button btn-submit expanded" value="Get In Touch!"></input></p>
+                <p><input type="submit" class="button btn-submit expanded" value="Get In Touch!" name="formsubmit"></input></p>
               </form>
               <?php unset($_SESSION['cf_returndata']); ?>
           </div>

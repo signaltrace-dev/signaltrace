@@ -22,7 +22,7 @@
         "name" : "Piedmont Healthcare",
         "url" : "https://www.piedmont.org",
         "img" : "/assets/img/piedmont.png",
-        "images" : ["/assets/img/piedmont-large.png"],
+        "images" : ["/assets/img/piedmont-home.png", "/assets/img/piedmont-living-better.png","/assets/img/piedmont-locations.png"],
         "body" : "<p>I was the lead developer on a site redesign for Piedmont Healthcare. This involved importing large amounts of existing content into a proprietary CMS, developing responsive HTML and CSS from Photoshop layouts, and developing custom functionality throughout the site.</p><p>The most notable (and <a href='http://www.aviddesignblog.com/2015/11/award-winning-2015/' target='_blank'>award-winning</a>!) pieces that I developed were the <a target='_blank' href='http://www.piedmont.org/living-better'>Living Better blog</a> and the <a target='_blank' href='http://www.piedmont.org/locations/locations-map?category=1'>Locations Map</a>.</p>"
       },
       {
@@ -60,7 +60,7 @@
         "name" : "Baptist Health South Florida - Carevenience",
         "url" : "https://baptisthealth.net/en/lp/pages/carevenience.aspx",
         "img" : "/assets/img/baptist-care.png",
-        "images" : ["/assets/img/baptist-care-large.png"],
+        "images" : ["/assets/img/baptist-care-large.png","/assets/img/baptist-care-options.png"],
         "body" : "<p>Carevenience is a single-page application using Vue, integrated with the Baptist Sharepoint environment.</p><p>The application allows patients to select from a list of ailments and get the best recommended treatment options, with additional filtering for cost, distance, and availability.</p>"
       },
       {

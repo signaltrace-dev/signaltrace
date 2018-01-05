@@ -15,32 +15,48 @@ if( isset($_POST) ){
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+	$response = $_POST["g-recaptcha-response"];
+	$url = 'https://www.google.com/recaptcha/api/siteverify';
+	$data = array(
+		'secret' => '6LcFaz8UAAAAAAeBGtBMDIIu86GfKSToKZE6sp-j',
+		'response' => $_POST["g-recaptcha-response"]
+	);
+	$options = array(
+		'http' => array (
+			'method' => 'POST',
+			'content' => http_build_query($data)
+		)
+	);
+	$context  = stream_context_create($options);
+	$verify = file_get_contents($url, false, $context);
+	$captcha_success=json_decode($verify);
+	if ($captcha_success->success==false) {
+		$errors[] = "Nothing against robots, but could you check the 'I'm not a robot' checkbox?";
+	}
+
     //validate form data
 
     //validate name is not empty
     if(empty($name)){
-        $formok = false;
         $error_fields['name'] = TRUE;
         $errors[] = "You haven't entered a name! Come on, don't be shy!";
     }
 
     //validate email address is not empty
     if(empty($email)){
-        $formok = false;
         $errors[] = "Hey, I need an email address so I can get back to you!";
     //validate email address is valid
     }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $formok = false;
         $error_fields['email'] = TRUE;
         $errors[] = "Oops, that doesn't look like a valid email address!";
     }
 
     //validate message is not empty
     if(empty($message)){
-        $formok = false;
         $error_fields['message'] = TRUE;
         $errors[] = "I know that all of this is super exciting, but I need some details on what kind of project you're needing help with!";
     }
+    $formok = sizeof($errors) == 0;
 
     //send email if all is ok
     if($formok){
@@ -77,6 +93,7 @@ if( isset($_POST) ){
         $_SESSION['cf_returndata'] = $returndata;
 
         //redirect back to form
-        header('location: ' . $_SERVER['HTTP_REFERER']) . '#contact';
+        $url = $_SERVER['HTTP_REFERER'] . '#contact';
+        header('location: ' . $url);
     //}
 }
