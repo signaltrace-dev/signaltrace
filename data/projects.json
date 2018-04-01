@@ -1,7 +1,7 @@
 [
   {
-    "client": "AVID",
-    "clientLogo": "/assets/img/avid.png",
+    "client": "MERGE",
+    "clientLogo": "/assets/img/merge.svg",
     "projects": [
       {
         "name" : "University of Miami Health System",
@@ -33,7 +33,7 @@
         "body" : "<p>The CareOregon site redesign is an ongoing project for which I am the lead developer. Using Sitefinity 10, the redesign has been mostly focused on building custom page layouts and reusable Sitefinity widgets for common page components.</p>",
         "notes": [
           "Custom content types and functionality for News, Events, and Stories",
-          "Integration with the AVIDCMS Classes and Events tool, including custom search, details, and registration widgets",
+          "Integration with the proprietary AVIDCMS Classes and Events tool, including custom search, details, and registration widgets",
           "Different page layouts and functionality per audience (Member, Provider, Public)",
           "Leverages Sitefinity's language support to provide translated content based on the user's selected language"
         ]
