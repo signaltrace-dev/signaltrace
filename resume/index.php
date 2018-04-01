@@ -74,8 +74,8 @@
       </div>
       <div class="large-9 columns section-body">
         <div class="section-experience">
-            <h3 class="experience-title">Senior Web Developer at <a href="http://mergeworld.com">MERGE Atlanta, Dodge Communications + AVID Design</a></h3>
-            <h4 class="experience-timeline">February 2017 - March 2018</h4>
+            <h3 class="experience-title">Senior Web Developer at <a href="http://mergeatlanta.com">MERGE Atlanta, Dodge Communications + AVID Design</a></h3>
+            <h4 class="experience-timeline">March 2018 - Present</h4>
             <div class="experience-body">
               <ul class="experience">
                 <li>Duties and responsibilities as listed below for AVID Design.</li>
@@ -83,7 +83,7 @@
             </div>
           </div>
         <div class="section-experience">
-            <h3 class="experience-title">Senior Web Developer at <a href="http://aviddesign.com">AVID Design</a>, now <a href="http://mergeworld.com">MERGE Atlanta</a></h3>
+            <h3 class="experience-title">Senior Web Developer at <a href="http://aviddesign.com">AVID Design</a>, now <a href="http://mergeatlanta.com">MERGE Atlanta</a></h3>
             <h4 class="experience-timeline">February 2017 - March 2018</h4>
             <div class="experience-body">
               <ul class="experience">
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="section-experience">
-          <h3 class="experience-title">Web Developer at <a href="http://aviddesign.com">AVID Design</a>, now <a href="http://mergeworld.com">MERGE Atlanta</a></h3>
+          <h3 class="experience-title">Web Developer at <a href="http://aviddesign.com">AVID Design</a>, now <a href="http://mergeatlanta.com">MERGE Atlanta</a></h3>
           <h4 class="experience-timeline">May 2014 - May 2015</h4>
           <div class="experience-body">
             <ul class="experience">
